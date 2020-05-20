@@ -44,12 +44,14 @@ export class UserComponent implements OnInit {
       return;
     }
 
-    Swal.fire({
+    Swal.fire ({
       title: 'Wait',
       text: 'Saving information',
       type: 'info',
+      timer: 1500,
       allowOutsideClick: false
     });
+    
     Swal.showLoading();
 
     
